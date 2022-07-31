@@ -15,11 +15,6 @@ namespace Args
             {
                 return;
             }
-            
-            foreach (var arg in args)
-            {
-                Console.WriteLine(arg);
-            }
 
             ParseSchema(schema);
             ParseArguments(args.ToList());
