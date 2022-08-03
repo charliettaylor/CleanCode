@@ -40,7 +40,7 @@ namespace Args
                 new [] {"C:/some/path/for/dll", "-a", "true", 
                 "-b", "Caught in a mosh", "-c", "15", "extra info"});
 
-            Assert.IsTrue(arg.GetBool('a') == true);
+            Assert.IsTrue(arg.GetBool('a'));
             Assert.IsTrue(arg.GetString('b') == "Caught in a mosh");
             Assert.IsTrue(arg.GetInt('c') == 15);
         }
